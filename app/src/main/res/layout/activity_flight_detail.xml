@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.example.fachefabien.listviewrecyclerview.activity.FlightDetailActivity">
+
+    <TextView
+        android:gravity="center"
+        android:id="@+id/textViewFlightNumber"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="16dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:text="Départ"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textViewFlightNumber"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="50dp"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="80dp"
+        android:id="@+id/textViewDepart"
+        android:textAlignment="center"
+        android:textSize="18sp" />
+
+    <TextView
+        android:text="Arrivé"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/textViewDepart"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginRight="50dp"
+        android:layout_marginEnd="50dp"
+        android:id="@+id/textViewArrival"
+        android:textAlignment="center"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/textViewCityDep"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textViewDepart"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="45dp" />
+
+    <TextView
+        android:id="@+id/textViewCityArr"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/textViewCityDep"
+        android:layout_marginRight="5dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textViewCityDep"
+        android:layout_alignLeft="@+id/textViewCityDep"
+        android:layout_alignStart="@+id/textViewCityDep"
+        android:layout_marginTop="45dp"
+        android:id="@+id/textViewDepDate" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/textViewDepDate"
+        android:layout_alignRight="@+id/textViewCityArr"
+        android:layout_alignEnd="@+id/textViewCityArr"
+        android:id="@+id/textViewArrDate" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textViewDepDate"
+        android:layout_alignLeft="@+id/textViewDepDate"
+        android:layout_alignStart="@+id/textViewDepDate"
+        android:layout_marginTop="45dp"
+        android:id="@+id/textViewDepHour" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/textViewDepHour"
+        android:layout_alignRight="@+id/textViewArrDate"
+        android:layout_alignEnd="@+id/textViewArrDate"
+        android:id="@+id/textViewArrHour" />
+
+
+</RelativeLayout>
